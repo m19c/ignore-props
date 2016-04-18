@@ -24,7 +24,7 @@ class SomeComponent {
     return (
       <NewsPost
         newsId={ id }
-        { ignoreProps(this.props, 'id') }
+        { ...ignoreProps(this.props, 'id') }
       />
     );
   }
